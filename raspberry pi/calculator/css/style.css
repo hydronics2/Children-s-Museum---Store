@@ -1,0 +1,70 @@
+
+@font-face {
+  font-family: 'test';
+  src: url("../css/WhiteRabbit.woff") format('woff');;
+}
+
+
+body {
+background: #000000; /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#calculator {
+  color: #c2d73e;
+  text-transform: uppercase;
+  font-family: 'test';
+  font-weight: normal;
+  font-style: normal;
+
+
+}
+
+#buttons {
+  visibility: hidden;
+}
+
+#display {
+  margin-right: 50px;
+  margin-left: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 200px;
+  /*display: flex;
+  flex-direction: column;*/
+  background-color: #000000;
+/*   box-shadow: inset 3px 3px 3px 3px rgba(5,5,5,0.7);
+  border: none; */
+  border: 4px inset #8C9A7D;
+  /*border-radius: 5px;
+  padding: 5px;
+  padding-bottom: 0px;
+
+  word-wrap: break-word;*/
+
+}
+
+#exprOperator2 {
+display: inline-block;
+text-align: right;
+}
+#expr2 {
+display: inline-block;
+text-align: right;
+}
+
+#exprOperator3 {
+display: inline-block;
+text-align: right;
+}
+#expr3 {
+display: inline-block;
+text-align: right;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 250px;
+  text-align: center;
+}
