@@ -41,7 +41,8 @@ function buttonClick(e) {
       result = 0
     } else {
       if(element2Expr != '' && element2.length != 0){
-        var temp1 = element1
+        var temp1 = ''
+        temp1 = element1
         temp1.push(element2Expr)
         var temp2 = temp1.concat(element2)
         console.log(temp2)
@@ -63,6 +64,10 @@ function buttonClick(e) {
       // Our 7-segment result font can't display exponent
       const displayE = '<span style="font-family:monospace;">$&</span>'
       result = result.toString().replace(/e[\+-]/, displayE)
+      console.log(element1)
+      console.log(element2)
+      console.log(element3)
+
     }
     resultElement.innerHTML = "= " + result
   } else if (token == 'AC') {
@@ -134,7 +139,7 @@ function updateExpr(input) {
     exprElement3.innerHTML = '&nbsp;'
   } else {
     //exprElement.textContent = input.join('')
-    exprElement1.textContent = element1.join('')
+    //exprElement1.textContent = element1.join('')
   }
 }
 
