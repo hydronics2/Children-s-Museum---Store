@@ -1,0 +1,22 @@
+notes:
+
+Node and NPM serial port instructions: https://timodenk.com/blog/install-node-serialport-on-raspberry-pi/
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install -y build-essential
+
+sudo npm install -g node-gyp
+sudo npm install -g node-pre-gyp
+
+
+sudo npm install express
+sudo npm install socket.io
+edit server.js to include ls dev/tty* serial port for arduino
+
+
+if(1){
+  appPort = new serialport('/dev/ttyAMA0',{
+    baudRate:57600
+    });
+  socketServer.on('connection', openSocket);
+}
