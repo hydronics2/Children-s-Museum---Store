@@ -19,10 +19,6 @@ sudo -u pi chromium-browser --kiosk --incognito /home/pi/Portlands-Childrens-Mus
 
 # Now your scripts are for sure executable.  ;) Next the autostart file needs to be modified to make use of our scripts and the following commands added to the end of the file and in the specific order you see them here:
 # nano /home/pi/.config/lxsession/LXDE-pi/autostart
-# @xset s off
-# @xset s noblank
-# @xset -dpms
-# @unclutter -idle 5 -root
 # @/home/pi/Portlands-Childrens-Museum---Grocery/raspberry\ pi/calculator/start_chromium.sh
 
 #Now don't close the file just yet, you need to comment out one line with a #, so edit to look like this:
