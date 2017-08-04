@@ -11,6 +11,16 @@ background: #000000; /* fallback for old browsers */
 /*background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
 #calculator {
   color: #c2d73e;
   text-transform: uppercase;
