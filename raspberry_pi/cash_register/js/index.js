@@ -18,10 +18,20 @@ function countUp() {
   }
   document.onkeypress=function(e){
     console.log("key pressed");
-    addNum();
-    var audioUrl = "audio/cash_register.mp3";
-    var audio = new Audio(audioUrl);
-    audio.play();
+    console.log(e.keyCode);
+    if(e.keyCode == 114){ //keycode for r or reset
+      console.log("clearing");
+      clearNum();
+      var audioUrl = "audio/beep.mp3";
+      var audio = new Audio(audioUrl);
+      audio.play();
+    }
+    if(e.keyCode == 97){ //keycode for a or add number
+      addNum();
+      var audioUrl = "audio/cash_register.mp3";
+      var audio = new Audio(audioUrl);
+      audio.play();
+    }
   }
   document.onclick = function(e){
     console.log("clearing");
